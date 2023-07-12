@@ -3,6 +3,7 @@ import Image from '../components/Image'
 import ImagesContext  from "../context/ImagesContext";
 import { useParams } from "react-router-dom";
 import SearchImages from "../components/SearchImages";
+import { Link } from "react-router-dom";
 
 export default function ImageDetail () {
   const {id} = useParams()
@@ -21,6 +22,8 @@ export default function ImageDetail () {
         Hemos utilizado tambien el <strong>useParams</strong> de react-router-dom, para que mediante el parametro dinamico de la URL mostremos la imagen que nos interesa del listado que habiamos cargado previamente.
       </p>
       <SearchImages/>
+      <Link to="/context">Volver a la galería</Link>
+      <h2 className="mb-4">Detalle de imagen</h2>
       {
         image?
           <Image

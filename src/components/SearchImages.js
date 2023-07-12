@@ -19,7 +19,7 @@ export default function SearchImages() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="row align-items-end mb-5">
+        <div className="row align-items-end mb-4">
           <div className="col">
               <label className="form-label">Escribe el id de la imágen para acceder</label>
               <input className="form-control" type="text" onChange={handleChange} value={keyWord}/>
