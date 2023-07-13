@@ -11,6 +11,7 @@ import ImageDetail from './pages/ImageDetail';
 
 import { Route, Routes } from 'react-router-dom';
 import LazyComponentPage from './pages/LazyComponentPage';
+import Rendimiento from './pages/Rendimiento';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path='/links/link-example-b' element={<LinkExampleB/>} />
                 <Route path='/image/:id' element={<ImageDetail/>} />
                 <Route path='/lazy-component' element={<LazyComponentPage/>}></Route>
+                <Route path='/rendimiento' element={<Rendimiento/>}></Route>
             </Routes>
           </ImagesContextProvider>
         </div>
