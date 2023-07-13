@@ -3,7 +3,7 @@ const Home = () => {
   return (
     <>
       <h1 className="bg-dark text-white text-center my-4 py-4">
-        React Tests
+        React Wiki
       </h1>
       <h5 className="text-center mb-5"> 
         Aquí encontraremos varios ejemplos para saber utilizar las principales ventajas de React.<br/><br/>
