@@ -1,11 +1,9 @@
-# URL production project
-
-Open [https://reactwiki.vercel.app](https://reactwiki.vercel.app)
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The node version to develop is 18.16.0
+
+To see this project in production mode you can visit [https://reactwiki.vercel.app](https://reactwiki.vercel.app)
 
 ## Available Scripts
 
