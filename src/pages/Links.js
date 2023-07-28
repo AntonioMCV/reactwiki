@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Links = () => {
   return (
     <>
-      <h1 className="bg-dark text-white text-center my-4 py-4">Links</h1>
+      <h1 className="bg-dark text-white text-center my-4 py-4">Enlaces Simples</h1>
       <p className="alert alert-secondary">Usamos el paquete npm <strong>react-router-dom</strong> para poder utilizar las ventajas del single page application.<br/><br/> Se deberán importar los componentes necesarios <strong>Link, Routes y Route</strong>, siendo <strong>Routes</strong> el area donde se irán renderizando los componentes según su URL</p>
   
       <ul>

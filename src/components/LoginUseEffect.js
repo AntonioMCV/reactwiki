@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import classes from './Login.module.css';
+import classes from './LoginUseEffect.module.css';
 
-const Login = () => {
+const LoginUseEffect = () => {
 
   const [enteredEmail, setEnteredEmail] = useState('');
   const [emailIsValid, setEmailIsValid] = useState();
@@ -90,4 +90,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default LoginUseEffect

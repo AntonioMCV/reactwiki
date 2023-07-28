@@ -1,4 +1,4 @@
-import Login from '../components/Login'
+import LoginUseEffect from '../components/LoginUseEffect'
 
 const useEffectPage = (props) => {
 
@@ -16,7 +16,7 @@ const useEffectPage = (props) => {
         Por otro lado <b>se han aplicado estilos CSS modulares</b>, estos se usan para que los estilos se apliquen a un solo componente <b>evitando una indeseada propagación</b>.<br/><br/>
         Inspecciona el código del proyecto y comprueba como van apareciendo los console.log según el caso en las funcciones de useEffect, y como se aplican los estilos modulares.
       </p>
-      <Login />
+      <LoginUseEffect />
     </>
   )
 }
