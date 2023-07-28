@@ -12,6 +12,7 @@ import ImageDetail from './pages/ImageDetail';
 import { Route, Routes } from 'react-router-dom';
 import LazyComponentPage from './pages/LazyComponentPage';
 import Rendimiento from './pages/Rendimiento';
+import UseEffectPage from './pages/UseEffectPage';
 
 function App() {
   return (
@@ -22,14 +23,15 @@ function App() {
           <ImagesContextProvider>
             <Routes>
               <Route path='/' element={<Home />} />
-                <Route path='/links' element={<Links/>} />
-                <Route path='/image' element={<ContextPage/>} />
-                <Route path='/context' element={<ContextPage/>} />
-                <Route path='/links/link-example-a' element={<LinkExampleA/>} />
-                <Route path='/links/link-example-b' element={<LinkExampleB/>} />
-                <Route path='/image/:id' element={<ImageDetail/>} />
-                <Route path='/lazy-component' element={<LazyComponentPage/>}></Route>
-                <Route path='/rendimiento' element={<Rendimiento/>}></Route>
+              <Route path='/use-effect' element={<UseEffectPage/>} />
+              <Route path='/links' element={<Links/>} />
+              <Route path='/image' element={<ContextPage/>} />
+              <Route path='/context' element={<ContextPage/>} />
+              <Route path='/links/link-example-a' element={<LinkExampleA/>} />
+              <Route path='/links/link-example-b' element={<LinkExampleB/>} />
+              <Route path='/image/:id' element={<ImageDetail/>} />
+              <Route path='/lazy-component' element={<LazyComponentPage/>}></Route>
+              <Route path='/rendimiento' element={<Rendimiento/>}></Route>
             </Routes>
           </ImagesContextProvider>
         </div>
