@@ -17,7 +17,7 @@ const Footer = () => {
                  <Link className="dropdown-item" to="/use-effect">useEffect & ModuleCSS</Link>
                 </li>
                 <li>
-                 <Link className="dropdown-item" to="/use-effect">useReducer</Link>
+                 <Link className="dropdown-item" to="/use-reducer">useReducer</Link>
                 </li>
               </ul>
             </li>

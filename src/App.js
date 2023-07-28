@@ -13,6 +13,7 @@ import { Route, Routes } from 'react-router-dom';
 import LazyComponentPage from './pages/LazyComponentPage';
 import Rendimiento from './pages/Rendimiento';
 import UseEffectPage from './pages/UseEffectPage';
+import UseReducerPage from './pages/UseReducerPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/use-effect' element={<UseEffectPage/>} />
+              <Route path='/use-reducer' element={<UseReducerPage/>} />
               <Route path='/links' element={<Links/>} />
               <Route path='/image' element={<ContextPage/>} />
               <Route path='/context' element={<ContextPage/>} />
