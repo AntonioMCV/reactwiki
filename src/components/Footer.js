@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-expand navbar navbar-dark bg-dark">
       <div className="container">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-           <li className="nav-item">
+            <li className="nav-item">
+              <Link className="nav-link" to="/use-effect">useEffect & ModuleCSS</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/links">Links</Link>
             </li>
             <li className="nav-item">

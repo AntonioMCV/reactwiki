@@ -1,4 +1,3 @@
-import React from "react";
 const Home = () => {
   return (
     <>
@@ -9,7 +8,7 @@ const Home = () => {
         Aquí encontraremos varios ejemplos para saber utilizar las principales ventajas de React.<br/><br/>
         Ten presente que por motivos de incompatibilidad se han tenido que eliminar las llavecillas de los cuadros de codigos de ejemplos y no es completamente fiel a como realmente hay que escribirlo.<br/><br/>
         Si lo necesitas siempre puedes recurrir al código original en:<br/><br/>
-        <a href="https://github.com/AntonioMCV/reactwiki" target="_blank">Repo de este proyecto</a>
+        <a href="https://github.com/AntonioMCV/reactwiki" target="_blank" rel="noreferrer">Repo de este proyecto</a>
       </h5>
     </>
   )
