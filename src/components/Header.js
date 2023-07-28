@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-sm navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-expand navbar-dark bg-dark">
       <div className="container-md">
         <Link className="navbar-brand" to="/">React Wiki</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
