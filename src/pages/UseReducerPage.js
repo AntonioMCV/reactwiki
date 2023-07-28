@@ -9,7 +9,7 @@ const UseReducerPage = (props) => {
         Con el hook <b>useReducer</b> tenemos un uso del estado vitaminado para ejecuciones mas complejas.<br/>
         Podemos echar un vistazo a este esquema para poder comprender su funcionamiento:<br/>
         <img loading='lazy' alt='' className="d-block mx-auto my-4" src='/schemeReducer.png' /><br/>
-        En este caso estamos validando el mail por useReducer, inspecciona el código del proyecto para ver su funcionamiento.
+        En este caso estamos validando el mail y la password por useReducer, inspecciona el código del proyecto para ver su funcionamiento.
       </p>
       
       <LoginUseReducer />
