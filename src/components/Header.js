@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
@@ -30,12 +31,18 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-
-            <li className="nav-item">
-              <Link className="nav-link" to="/links">Links</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/context">Contextos Rutas dinámicas</Link>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Links
+              </a>
+              <ul className="dropdown-menu">
+                <li>
+                 <Link className="dropdown-item" to="/links">Enlaces simples</Link>
+                </li>
+                <li>
+                 <Link className="dropdown-item" to="/context">Contextos Rutas dinámicas</Link>
+                </li>
+              </ul>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/lazy-component">Lazy Component</Link>
