@@ -14,6 +14,7 @@ import LazyComponentPage from './pages/LazyComponentPage';
 import UseMemoPageUseCallback from './pages/UseMemoPageUseCallbackPage';
 import UseEffectPage from './pages/UseEffectPage';
 import UseReducerPage from './pages/UseReducerPage';
+import ApiPage from './pages/APIPage';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path='/image/:id' element={<ImageDetail/>} />
               <Route path='/lazy-component' element={<LazyComponentPage/>}></Route>
               <Route path='/use-memo-use-callback' element={<UseMemoPageUseCallback/>}></Route>
+              <Route path='/apis' element={<ApiPage/>}></Route>
             </Routes>
           </ImagesContextProvider>
         </div>

@@ -40,6 +40,9 @@ const Footer = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/lazy-component">Lazy Component</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/apis">APIs</Link>
+            </li>
           </ul>
         </div>
       </div>
