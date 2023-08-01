@@ -19,6 +19,9 @@ const Footer = () => {
                 <li>
                  <Link className="dropdown-item" to="/use-reducer">useReducer</Link>
                 </li>
+                <li>
+                  <Link className="dropdown-item" to="/use-memo-use-callback">useMemo y useCallback</Link>
+                </li>
               </ul>
             </li>
             <li className="nav-item dropup">
@@ -36,9 +39,6 @@ const Footer = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/lazy-component">Lazy Component</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/rendimiento">Rendimiento</Link>
             </li>
           </ul>
         </div>

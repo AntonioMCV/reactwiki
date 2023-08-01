@@ -1,6 +1,7 @@
 import React, { memo, useCallback, useState } from "react";
 
-function RendimientoHijo ({changeName, cambiarNombrePadre}) {
+function RendimientoHijo ({changeName, cambiarNombrePadre, exampleArray}) {
+  console.log('COMPONENTE HIJO RENDER!');
 
   const [keyWord, setKeyWord] = useState('')
 
@@ -26,6 +27,14 @@ function RendimientoHijo ({changeName, cambiarNombrePadre}) {
               <button className="btn btn-primary">Cambiar el nombre del padre</button>
             </div>
           </div>
+          <p>Además a este componente le estamos pasando desde el padre el array numbers mediante la prop exampleArray</p>
+          <ul>
+            {exampleArray.map((number, i) => 
+              <li key={i}>
+                {number}
+              </li>
+            )}
+          </ul>
         </form>
       </div>
   </>

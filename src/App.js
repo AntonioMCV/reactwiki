@@ -11,7 +11,7 @@ import ImageDetail from './pages/ImageDetail';
 
 import { Route, Routes } from 'react-router-dom';
 import LazyComponentPage from './pages/LazyComponentPage';
-import Rendimiento from './pages/Rendimiento';
+import UseMemoPageUseCallback from './pages/UseMemoPageUseCallbackPage';
 import UseEffectPage from './pages/UseEffectPage';
 import UseReducerPage from './pages/UseReducerPage';
 
@@ -33,7 +33,7 @@ function App() {
               <Route path='/links/link-example-b' element={<LinkExampleB/>} />
               <Route path='/image/:id' element={<ImageDetail/>} />
               <Route path='/lazy-component' element={<LazyComponentPage/>}></Route>
-              <Route path='/rendimiento' element={<Rendimiento/>}></Route>
+              <Route path='/use-memo-use-callback' element={<UseMemoPageUseCallback/>}></Route>
             </Routes>
           </ImagesContextProvider>
         </div>

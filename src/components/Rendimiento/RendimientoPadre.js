@@ -1,7 +1,8 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useMemo, useEffect } from "react";
 import RendimientoHijo from "./RendimientoHijo";
 
 export default function RendimientoPadre () {
+  console.log('COMPONENTE PADRE RENDER!');
 
   const [keyWord, setKeyWord] = useState('')
   const [nombreHijo, setNombreHijo] = useState('hijo')
@@ -20,6 +21,8 @@ export default function RendimientoPadre () {
     (newName) => setNombrePadre(newName),[]
   )
 
+  const numbers = useMemo(()=>[1,2,3,4], [])
+
   return <>
       <div className="border border-black p-5 mb-5">
         <h2 className="mb-4">Componente {nombrePadre}</h2>
@@ -34,7 +37,7 @@ export default function RendimientoPadre () {
             </div>
           </div>
         </form>
-        <RendimientoHijo changeName={nombreHijo} cambiarNombrePadre={cambiarNombrePadre}/>
+        <RendimientoHijo changeName={nombreHijo} cambiarNombrePadre={cambiarNombrePadre} exampleArray={numbers}/>
       </div>
   </>
 }
