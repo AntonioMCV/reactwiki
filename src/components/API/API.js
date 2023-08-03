@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import MoviesList from './MoviesList';
 import AddMovie from './AddMovie';
-import './API.css';
+import classes from './API.module.css';
 
 function Api() {
   const [movies, setMovies] = useState([]);
@@ -72,7 +72,7 @@ function Api() {
   }
 
   return (
-    <React.Fragment>
+    <div className={classes.api}>
       <section>
         <AddMovie onAddMovie={addMovieHandler} />
       </section>
@@ -80,7 +80,7 @@ function Api() {
         <button onClick={fetchMoviesHandler}>Fetch Movies</button>
       </section>
       <section>{content}</section>
-    </React.Fragment>
+    </div>
   );
 }
 
