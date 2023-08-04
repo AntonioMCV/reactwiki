@@ -8,40 +8,66 @@ const Footer = () => {
       <div className="container">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-          <li className="nav-item dropup">
+            <li className="nav-item dropup">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 React Hooks
               </a>
-              <ul className="dropdown-menu dropdown">
+              <ul className="dropdown-menu dropdown-menu-dark">
                 <li>
-                 <Link className="dropdown-item" to="/use-effect">useEffect & ModuleCSS</Link>
+                 <Link className="dropdown-item" to="/hooks/use-effect">useEffect</Link>
                 </li>
                 <li>
-                 <Link className="dropdown-item" to="/use-reducer">useReducer</Link>
+                  <Link className="dropdown-item" to="/hooks/use-memo-use-callback">useMemo y useCallback</Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/use-memo-use-callback">useMemo y useCallback</Link>
+                 <Link className="dropdown-item" to="/hooks/use-reducer">useReducer</Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item dropup">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Links
+                Librerías
               </a>
-              <ul className="dropdown-menu dropdown">
-                <li>
-                 <Link className="dropdown-item" to="/links">Enlaces simples</Link>
+              <ul className="dropdown-menu dropdown-menu-dark">
+                <li className="dropdown-item active">
+                  Redux
                 </li>
                 <li>
-                 <Link className="dropdown-item" to="/context">Contextos Rutas dinámicas</Link>
+                  <Link className="dropdown-item" to="librerias/redux/basico">Redux básico</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="librerias/redux/toolkit">Redux toolkit</Link>
+                </li>
+                <li><hr class="dropdown-divider"/></li>
+                <li className="dropdown-item active">
+                  Router Dom
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/librerias/router-dom/dynamic-links">Rutas dinámicas</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/librerias/router-dom/simple-links">Enlaces simples</Link>
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/lazy-component">Lazy Component</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/apis">APIs</Link>
+            <li className="nav-item dropup">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Otros
+              </a>
+              <ul className="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <Link className="dropdown-item" to="/otros/apis">APIs</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/otros/context">Contextos</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/otros/module-css">ModuleCSS</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/otros/lazy-component">Lazy Component</Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

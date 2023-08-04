@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+
+//Para usar el moduleCSS nuestro archivo tiene que terminar en .module.css
 import classes from './LoginUseEffect.module.css';
 
 const LoginUseEffect = () => {

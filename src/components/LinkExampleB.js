@@ -7,13 +7,13 @@ const LinkExampleB = () => {
       <h1>LinkExample B</h1>
       <ul>
         <li>
-          <Link to="/links">Links</Link>
+          <Link to="/librerias/router-dom/simple-links">Links</Link>
         </li>
         <li>
-          <Link to="/links/link-example-a">Link example A</Link>
+          <Link to="/librerias/router-dom/simple-links/link-example-a">Link example A</Link>
         </li>
         <li>
-          <Link to="/links/link-example-b">Link example B</Link>
+          <Link to="/librerias/router-dom/simple-links/link-example-b">Link example B</Link>
         </li>
       </ul>
     </>
