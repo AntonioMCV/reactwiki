@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Links = () => {
+const SimpleLinksPage = () => {
   return (
     <>
       <h1 className="bg-dark text-white text-center my-4 py-4">Enlaces Simples</h1>
@@ -8,10 +8,10 @@ const Links = () => {
   
       <ul>
         <li>
-          <Link to="/links/link-example-a">Link example A</Link>
+          <Link to="/librerias/router-dom/simple-links/link-example-a">Link example A</Link>
         </li>
         <li>
-          <Link to="/links/link-example-b">Link example B</Link>
+          <Link to="/librerias/router-dom/simple-links/link-example-b">Link example B</Link>
         </li>
       </ul>
 
@@ -33,4 +33,4 @@ const Links = () => {
   )
 }
 
-export default Links
+export default SimpleLinksPage

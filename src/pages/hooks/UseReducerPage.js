@@ -1,6 +1,6 @@
-import LoginUseReducer from '../components/LoginUseReducer'
+import LoginUseReducer from 'components/LoginUseReducer'
 
-const UseReducerPage = (props) => {
+const UseReducerPage = () => {
 
   return (
     <>

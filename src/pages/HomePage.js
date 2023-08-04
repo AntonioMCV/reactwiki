@@ -1,4 +1,4 @@
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <h1 className="bg-dark text-white text-center my-4 py-4">
@@ -14,4 +14,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

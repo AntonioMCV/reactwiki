@@ -1,5 +1,5 @@
 import React from 'react';
-import Api from '../components/API/API';
+import Api from 'components/API/API';
 
 function ApiPage() {
 

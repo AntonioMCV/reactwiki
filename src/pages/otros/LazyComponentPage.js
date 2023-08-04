@@ -1,5 +1,5 @@
 import React from "react";
-import LazyComponentToLoad from "../components/LazyComponent";
+import LazyComponentToLoad from "components/LazyComponent";
 
 export default function LazyComponentPage () {
 

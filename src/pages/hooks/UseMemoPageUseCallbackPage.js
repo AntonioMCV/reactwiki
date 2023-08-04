@@ -1,5 +1,5 @@
 import React from "react";
-import RendimientoPadre from "../components/Rendimiento/RendimientoPadre";
+import RendimientoPadre from "components/Rendimiento/RendimientoPadre";
 
 export default function UseMemoPageUseCallback () {
 

@@ -1,20 +1,24 @@
 import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './pages/Home';
-import Links from './pages/Links';
-import ContextPage from './pages/ContextPage';
+import HomePage from './pages/HomePage';
+import SimpleLinksPage from './pages/librerias/router-dom/SimpleLinksPage';
+import DynamicLinksPage from './pages/librerias/router-dom/DynamicLinksPage';
 import LinkExampleA from './components/LinkExampleA';
 import LinkExampleB from './components/LinkExampleB';
 import { ImagesContextProvider } from './context/ImagesContext';
-import ImageDetail from './pages/ImageDetail';
+import DynamicLinkDetailPage from './pages/librerias/router-dom/DynamicLinkDetailPage';
 
 import { Route, Routes } from 'react-router-dom';
-import LazyComponentPage from './pages/LazyComponentPage';
-import UseMemoPageUseCallback from './pages/UseMemoPageUseCallbackPage';
-import UseEffectPage from './pages/UseEffectPage';
-import UseReducerPage from './pages/UseReducerPage';
-import ApiPage from './pages/APIPage';
+import LazyComponentPage from './pages/otros/LazyComponentPage';
+import UseMemoPageUseCallback from './pages/hooks/UseMemoPageUseCallbackPage';
+import UseEffectPage from './pages/hooks/UseEffectPage';
+import UseReducerPage from './pages/hooks/UseReducerPage';
+import ApiPage from './pages/otros/APIPage';
+import ModuleCSSPage from 'pages/otros/ModuleCSSPage';
+import ContextPage from 'pages/otros/ContextPage';
+import BasicoPage from 'pages/librerias/redux/BasicoPage';
+import ToolkitPage from 'pages/librerias/redux/ToolkitPage';
 
 function App() {
   return (
@@ -24,18 +28,21 @@ function App() {
         <div className='container'>
           <ImagesContextProvider>
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/use-effect' element={<UseEffectPage/>} />
-              <Route path='/use-reducer' element={<UseReducerPage/>} />
-              <Route path='/links' element={<Links/>} />
-              <Route path='/image' element={<ContextPage/>} />
-              <Route path='/context' element={<ContextPage/>} />
-              <Route path='/links/link-example-a' element={<LinkExampleA/>} />
-              <Route path='/links/link-example-b' element={<LinkExampleB/>} />
-              <Route path='/image/:id' element={<ImageDetail/>} />
-              <Route path='/lazy-component' element={<LazyComponentPage/>}></Route>
-              <Route path='/use-memo-use-callback' element={<UseMemoPageUseCallback/>}></Route>
-              <Route path='/apis' element={<ApiPage/>}></Route>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/hooks/use-effect' element={<UseEffectPage/>} />
+              <Route path='/hooks/use-memo-use-callback' element={<UseMemoPageUseCallback/>}></Route>
+              <Route path='/hooks/use-reducer' element={<UseReducerPage/>} />
+              <Route path='/librerias/redux/basico' element={<BasicoPage/>} />
+              <Route path='/librerias/redux/toolkit' element={<ToolkitPage/>} />
+              <Route path='/librerias/router-dom/simple-links' element={<SimpleLinksPage/>} />
+              <Route path='/librerias/router-dom/dynamic-links' element={<DynamicLinksPage/>} />
+              <Route path='/librerias/router-dom/simple-links/link-example-a' element={<LinkExampleA/>} />
+              <Route path='/librerias/router-dom/simple-links/link-example-b' element={<LinkExampleB/>} />
+              <Route path='/otros/module-css' element={<ModuleCSSPage/>} />
+              <Route path='/otros/context' element={<ContextPage/>} />
+              <Route path='/otros/lazy-component' element={<LazyComponentPage/>}></Route>
+              <Route path='/otros/apis' element={<ApiPage/>}></Route>
+              <Route path='/image/:id' element={<DynamicLinkDetailPage/>} />
             </Routes>
           </ImagesContextProvider>
         </div>
