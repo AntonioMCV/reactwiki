@@ -2,6 +2,14 @@ const HomePage = () => {
   return (
     <>
       <h1 className="bg-dark text-white text-center my-4 py-4">React Wiki</h1>
+      <p className="alert alert-warning">
+        <b>
+          Esta Wiki esta pensada para gente que ya posee cierto conocimiento con
+          React
+        </b>{" "}
+        pero que por diferentes motivos se han olvidado de algunas de sus
+        funciones o necesita reforzarlas.
+      </p>
       <h2 className="text-center mb-5">Introducción</h2>
       <h5 className="text-center mb-5">
         Aquí encontraremos varios ejemplos para saber utilizar las principales
