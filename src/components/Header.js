@@ -48,7 +48,7 @@ const Header = () => {
                 <li>
                   <Link className="dropdown-item" to="librerias/redux/toolkit">Redux toolkit</Link>
                 </li>
-                <li><hr class="dropdown-divider"/></li>
+                <li><hr className="dropdown-divider"/></li>
                 <li className="dropdown-item active">
                   Router Dom
                 </li>
