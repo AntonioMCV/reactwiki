@@ -5,11 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from './store/index'
+import storeReduxToolkit from "store/reduxToolkit";
+
+// eslint-disable-next-line no-unused-vars
+import storeReduxbasic from "./store/reduxBasic";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
+  //use storeReduxbasic to change the provider store
+  <Provider store={storeReduxToolkit /* storeReduxbasic */}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
