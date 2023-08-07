@@ -1,4 +1,5 @@
 import Counter from "components/ReduxCounter/Counter";
+import { Link } from "react-router-dom";
 
 const BasicoPage = () => {
   return (
@@ -17,7 +18,7 @@ const BasicoPage = () => {
         </b>
         . Aquí es donde <b>Redux</b> entra en juego para ayudarte:
         <br />
-        <br />        
+        <br />
         <ul>
           <li>
             <b>Almacén (Store)</b>: Piensa en el almacén de Redux como un gran
@@ -62,11 +63,29 @@ const BasicoPage = () => {
         <br />
         Para poder utilizarlo debemos:
         <ul>
-          <li><b>Instalarnos</b> los paquetes npm <b>redux y react-redux</b></li>
-          <li><b>Importar el Provider</b> Redux y <b>envolver los componentes</b>.</li>
-          <li><b>Crear nuestra Store y pasarla como atributo en el componente Provider</b></li>
-          <li><b>Usar useSelector, useDispatch</b> de react-redux en los componentes donde queramos cambiar el estado de Redux</li>
+          <li>
+            <b>Instalarnos</b> los paquetes npm <b>redux y react-redux</b>
+          </li>
+          <li>
+            <b>Importar el Provider</b> Redux y <b>envolver los componentes</b>.
+          </li>
+          <li>
+            <b>
+              Crear nuestra Store y pasarla como atributo en el componente
+              Provider
+            </b>
+          </li>
+          <li>
+            <b>Usar useSelector, useDispatch</b> de react-redux en los
+            componentes donde queramos cambiar el estado de Redux
+          </li>
         </ul>
+        Como nota importante saber que nuestros Reducers siempre deben retornar
+        el objeto entero de nuevo, esto puede llevar a que nuestro archivo sea
+        demasiado grande y dificil de mantener es por eso que ahora tenemos a
+        nuestra dispoción{" "}
+        <Link to="/librerias/redux/toolkit">Redux Toolkit</Link> para
+        facilitarnos la tarea
       </p>
       <Counter />
     </>
