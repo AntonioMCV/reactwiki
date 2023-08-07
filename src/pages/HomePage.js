@@ -8,6 +8,11 @@ const HomePage = () => {
         ventajas de React.
         <br />
         <br />
+        Esta Wiki esta pensada para gente que ya posee cierto conocimiento con
+        React pero que por diferentes motivos se han olvidado de algunas de sus
+        funciones o necesita reforzarlas.
+        <br />
+        <br />
         Ten presente que por motivos de incompatibilidad se han tenido que
         eliminar las llavecillas de los cuadros de codigos de ejemplos y no es
         completamente fiel a como realmente hay que escribirlo.
