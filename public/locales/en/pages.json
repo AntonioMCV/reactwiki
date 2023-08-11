@@ -1,0 +1,12 @@
+{
+  "home": {
+    "reactWiki": "ReactWiki",
+    "warningBox": "<b>This Wiki is intended for people who already have some knowledge with React</b> but for various reasons have forgotten some of its features or need to strengthen them.",
+    "introduction": "Introduction",
+    "introductionDetails": "Here we will find several examples to know how to use the main advantages of React.<br><br>Keep in mind that for reasons of incompatibility the braces have had to be removed from the example code boxes and it is not completely faithful to how it really has to be written.<br><br>If you need it, you can always refer to the original code at:<br><br>",
+    "gitHub": "GitHub",
+    "sandBox": "SandBox",
+    "infoBoxTitle": "What is React?",
+    "infoBox": "'React' technology, also known as 'React.js' or simply 'React', is a JavaScript library developed by Facebook. It is used to build interactive and reusable user interfaces in web applications. React is focuses on creating reusable components that represent different parts of the user interface and its state.<br><br>The main feature of React is its focus on building user interfaces using components. React is a self-contained unit that can contain its own logic and state, and can be rendered to the UI based on state updates, allowing for the creation of modular and scalable user interfaces.<br><br>React uses a programming model called the 'Virtual DOM', which is an in-memory representation of the current UI structure When a component's state changes, React generates a virtual DOM update instead of manipulating it directly the DOM of the browser. It then compares this virtual update to the previous version to determine the actual changes that need to be applied to the actual DOM. This optimization technique helps improve the performance and efficiency of applications.<br><br>React is very popular in modern web development and is often combined with other libraries and tools to build complete applications. To manage application state in React, solutions like 'Redux' or 'Mobx' can be used. In addition, React can be integrated with web development frameworks such as 'React Router' to handle navigation and 'Axios' to make HTTP requests.<br><br>In short, React is a technology that allows you to build interactive user interfaces and dynamics in web applications through reusable components and an efficient approach to DOM manipulation."
+  }
+}

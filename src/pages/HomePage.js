@@ -1,15 +1,15 @@
 import { useTranslation } from "react-i18next"
 
 const HomePage = () => {
-  const {t} = useTranslation(["home"])
+  const {t} = useTranslation(["pages"])
 
   return (
     <>
-      <h1 className="bg-dark text-white text-center my-4 py-4">{t('reactWiki')}</h1>
+      <h1 className="bg-dark text-white text-center my-4 py-4">{t('home.reactWiki')}</h1>
 
-      <p className="alert alert-warning" dangerouslySetInnerHTML={{__html: t('warningBox')}}/>
-      <h2 className="text-center mb-5">{t('introduction')}</h2>
-      <h5 className="text-center" dangerouslySetInnerHTML={{__html: t('introductionDetails')}}/>
+      <p className="alert alert-warning" dangerouslySetInnerHTML={{__html: t('home.warningBox')}}/>
+      <h2 className="text-center mb-5">{t('home.introduction')}</h2>
+      <h5 className="text-center" dangerouslySetInnerHTML={{__html: t('home.introductionDetails')}}/>
       <div className="text-center mb-5 fs-5">
         <ul className="d-inline-block">
           <li>
@@ -18,7 +18,7 @@ const HomePage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              {t('gitHub')}
+              {t('home.gitHub')}
             </a>
           </li>
           <li>
@@ -27,15 +27,15 @@ const HomePage = () => {
               target="_blank"
               rel="noreferrer"
             >
-              {t('sandBox')}
+              {t('home.sandBox')}
             </a>
           </li>
         </ul>
       </div>
 
       <div className="alert alert-secondary">
-        <h3 className="mb-4">{t('infoBoxTitle')}</h3>
-        <p dangerouslySetInnerHTML={{__html: t('infoBox')}}/>
+        <h3 className="mb-4">{t('home.infoBoxTitle')}</h3>
+        <p dangerouslySetInnerHTML={{__html: t('home.infoBox')}}/>
       </div>
     </>
   );
