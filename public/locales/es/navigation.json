@@ -1,0 +1,19 @@
+{
+  "reactHooks": "React Hooks",
+  "useEffect": "useEffect",
+  "useMemoAndUseCallback": "useMemo y useCallback",
+  "useReducer": "useReducer",
+  "libraries": "Librerías",
+  "redux": "Redux",
+  "reduxBasic": "Redux Básico",
+  "reduxToolkit": "Redux Toolkit",
+  "routerDom": "Router Dom",
+  "dynamicRoutes": "Rutas Dinámicas",
+  "simpleRoutes": "Rutas simples",
+  "others": "Otros",
+  "apis": "Apis",
+  "contexts": "Contextos",
+  "moduleCSS": "Module CSS",
+  "lazyComponent": "Lazy Component",
+  "language": "Idioma"
+}
