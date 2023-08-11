@@ -5,8 +5,10 @@ import getImages from "services/getImages";
 import ImagesContex from "context/ImagesContext";
 import SearchImages from "components/SearchImages";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next"
 
 export default function ContextPage() {
+  const {t} = useTranslation(["pages"])
   const staticConfig =  useContext(ImagesContext)
   console.log(staticConfig)
 
@@ -23,13 +25,9 @@ export default function ContextPage() {
 
   return (
     <>
-      <h1 className="bg-dark text-white text-center my-4 py-4">Contextos</h1>
-      <p className="alert alert-secondary">
-        Con el <strong>Context provider</strong> puedo tener valores guardados y cambiar su estado entre multiples componentes sin tener que pasarles propiedades. Parecido al famoso Redux.<br/><br/>
-        En este ejemplo estamos usando el context provider comnbinado con el useState para guardar la informacion de las imagenes, así al irnos a su detalle no volveremos hacer una llamada a la API para renderizarlas ya que tendremos ya guardado un contexto global para consultarlo.<br/><br/>
+      <h1 className="bg-dark text-white text-center my-4 py-4">{t('others.contexts.title')}</h1>
+      <p className="alert alert-secondary" dangerouslySetInnerHTML={{__html: t('others.contexts.infoBox')}} />
 
-        Como se puede apreciar en el código el contexto tiene que envolver todos los componentes donde se quiera leer
-      </p>
       <SearchImages/>
       <ListOfImages gifs={images}/>
       <pre className="border border-dark bg-light my-5">

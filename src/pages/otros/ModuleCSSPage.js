@@ -1,18 +1,14 @@
 import LoginUseEffect from 'components/LoginUseEffect'
+import { useTranslation } from "react-i18next"
+
 
 const ModuleCSSPage = () => {
-
+  const {t} = useTranslation(["pages"])
   return (
     <>
-      <h1 className="bg-dark text-white text-center my-4 py-4">ModuleCSS</h1>
-      <p className="alert alert-secondary">
-        Gracias a los <b>estilos CSS modulares</b> podemos hacer que los estilos se apliquen a un solo componente <b>evitando una indeseada propagación</b>.<br/><br/>
-        Para ello <b>es necesario que el archivo CSS acabe en .module.css</b> en este ejemplo usamos "LoginUseEffect.module.css"
+      <h1 className="bg-dark text-white text-center my-4 py-4">{t('others.moduleCSS.title')}</h1>
+      <p className="alert alert-secondary" dangerouslySetInnerHTML={{__html: t('others.moduleCSS.infoBox')}} />
 
-        Le ponemos nombre a la variable que lo importa y la usamos en nuestro HTML.<br/><br/>
-        
-        Inspecciona el código del proyecto para ver como se aplican los estilos modulares.<br/><br/>
-      </p>
       <LoginUseEffect />
       <pre className="border border-dark bg-light my-5">
         Para usar el moduleCSS nuestro archivo CSS tiene que terminar en .module.css<br/>

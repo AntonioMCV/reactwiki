@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import storeReduxToolkit from "store/reduxToolkit";
+import './config/i18next-config'
 
 // eslint-disable-next-line no-unused-vars
 import storeReduxbasic from "./store/reduxBasic";
@@ -15,7 +16,9 @@ root.render(
   //use storeReduxbasic to change the provider store
   <Provider store={storeReduxToolkit /* storeReduxbasic */}>
     <BrowserRouter>
-      <App />
+      <Suspense fallback="Charging translates">
+        <App />
+      </Suspense>
     </BrowserRouter>
   </Provider>
 );

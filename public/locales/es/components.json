@@ -1,0 +1,29 @@
+{
+  "navigation": {
+    "reactHooks": "React Hooks",
+    "useEffect": "useEffect",
+    "useMemoAndUseCallback": "useMemo y useCallback",
+    "useReducer": "useReducer",
+    "libraries": "Librerías",
+    "redux": "Redux",
+    "reduxBasic": "Redux Básico",
+    "reduxToolkit": "Redux Toolkit",
+    "routerDom": "Router Dom",
+    "dynamicRoutes": "Rutas Dinámicas",
+    "simpleRoutes": "Rutas simples",
+    "others": "Otros",
+    "apis": "Apis",
+    "contexts": "Contextos",
+    "moduleCSS": "Module CSS",
+    "lazyComponent": "Lazy Component",
+    "language": "Idioma"
+  },
+  "RendimientoPadreEHijo": {
+    "componente": "componente",
+    "parent": "Padre",
+    "son": "Hijo",
+    "writeToRender": "Escribe para volver a renderizar el componente",
+    "changeNameOf": "Cambiar el nombre del",
+    "arrayExplicationProp": "Además a este componente le estamos pasando desde el padre el array numbers mediante la prop exampleArray"
+  }
+}

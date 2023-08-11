@@ -1,15 +1,16 @@
 import LoginUseReducer from 'components/LoginUseReducer'
+import { useTranslation } from "react-i18next"
+
 
 const UseReducerPage = () => {
-
+  const {t} = useTranslation(["pages"])
   return (
     <>
-      <h1 className="bg-dark text-white text-center my-4 py-4">useReducer</h1>
+      <h1 className="bg-dark text-white text-center my-4 py-4">{t('hooks.useReducer.title')}</h1>
       <p className="alert alert-secondary">
-        Con el hook <b>useReducer</b> tenemos un uso del estado vitaminado para ejecuciones mas complejas.<br/>
-        Podemos echar un vistazo a este esquema para poder comprender su funcionamiento:<br/>
+        <span dangerouslySetInnerHTML={{__html: t('hooks.useReducer.infoBox1st')}} />
         <img loading='lazy' alt='' className="d-block mx-auto my-4" src='/schemeReducer.png' /><br/>
-        En este caso estamos validando el mail y la password por useReducer y hacemos uso del useEffect para habilitar o deshabilitar el boton solo en caso de que cambie el estado de la validación, inspecciona el código del proyecto para ver su funcionamiento.
+        <span dangerouslySetInnerHTML={{__html: t('hooks.useReducer.infoBox2nd')}} />
       </p>
       
       <LoginUseReducer />

@@ -5,8 +5,11 @@ import getImages from "services/getImages";
 import ImagesContex from "context/ImagesContext";
 import SearchImages from "components/SearchImages";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next"
+
 
 export default function DynamicLinksPage() {
+  const {t} = useTranslation(["pages"])
   const staticConfig =  useContext(ImagesContext)
   console.log(staticConfig)
 
@@ -23,13 +26,9 @@ export default function DynamicLinksPage() {
 
   return (
     <>
-      <h1 className="bg-dark text-white text-center my-4 py-4">Rutas dinámicas</h1>
-      <p className="alert alert-secondary">
+      <h1 className="bg-dark text-white text-center my-4 py-4">{t('libraries.routerDom.dynamicRoutes.title')}</h1>
+      <p className="alert alert-secondary" dangerouslySetInnerHTML={{__html: t('libraries.routerDom.dynamicRoutes.infoBox')}} />
 
-
-        Estamos aprovechando este ejemplo para añadir un buscador y navegar atraves del boton a la imagen indicada en el fomulario, a su vez tambien se añaden <strong>URLs dinámicas</strong> en el <strong>App.js</strong><br/><br/>
-        Como se puede apreciar en el código la parte dinamica será indicada por dos puntos mas el nombre que queramos ponerle en la parte dinámica.
-      </p>
       <SearchImages/>
       <ListOfImages gifs={images}/>
       <pre className="border border-dark bg-light my-5">
