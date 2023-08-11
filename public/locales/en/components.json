@@ -17,5 +17,13 @@
     "moduleCSS": "Module CSS",
     "lazyComponent": "Lazy Component",
     "language": "Language"
+  },
+  "RendimientoPadreEHijo": {
+    "component": "Component",
+    "parent": "Father",
+    "son": "Son",
+    "writeToRender": "Write to re-render the component",
+    "changeNameOf": "Change the name of the",
+    "arrayExplicationProp": "In addition to this component we are passing the array numbers from the parent through the exampleArray prop"
   }
 }
