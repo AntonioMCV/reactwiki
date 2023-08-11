@@ -89,11 +89,11 @@ const Header = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {t('language')}: {i18n.language}
+                {t('language')}: {i18n.language.toUpperCase()}
               </a>
               <ul className="dropdown-menu dropdown-menu-dark">
                 <li>
-                 <button className="dropdown-item" onClick={changeLanguage}>{i18n.language === 'en'? 'es' : 'en'}</button>
+                 <button className="dropdown-item" onClick={changeLanguage}>{i18n.language === 'en'? 'ES' : 'EN'}</button>
                 </li>
               </ul>
             </li>
