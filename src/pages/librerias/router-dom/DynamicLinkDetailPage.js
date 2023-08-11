@@ -4,8 +4,11 @@ import ImagesContext  from "context/ImagesContext";
 import { useParams } from "react-router-dom";
 import SearchImages from "components/SearchImages";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"
+
 
 export default function DynamicLinkDetailPage () {
+  const {t} = useTranslation(["pages"])
   const {id} = useParams()
   const {images, galeriaURL} = useContext(ImagesContext)
   console.log({images})
