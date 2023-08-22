@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 
+import { useTranslation } from "react-i18next"
 import { counterActions } from "store/reduxToolkit/counter";
 import classes from "./CounterToolkit.module.css";
 
@@ -7,6 +8,7 @@ const CounterToolkit = () => {
   const dispatch = useDispatch();
   const counter = useSelector((state) => state.counter.counter);
   const show = useSelector((state) => state.counter.showCounter);
+  const {t} = useTranslation(["components"])
 
   const incrementHandler = () => {
     dispatch(counterActions.increment());
@@ -26,21 +28,21 @@ const CounterToolkit = () => {
 
   return (
     <main className={classes.counter}>
-      <h1>ReduxToolkit Me gusta Counter</h1>
+      <h1>{t('CounterToolkit.title')}</h1>
       {show && <div className={classes.value}>{counter}</div>}
       <div>
         <button onClick={incrementHandler} className="btn btn-success">
-          Me gusta
+          {t('CounterToolkit.like')}
         </button>
         <button onClick={increaseHandler} className="btn btn-success">
-          Me gusta mucho
+          {t('CounterToolkit.likePlus')}
         </button>
         <button onClick={decrementHandler} className="btn btn-danger">
-          No me gusta
+          {t('CounterToolkit.unlike')}
         </button>
       </div>
       <button onClick={toggleCounterHandler} className="btn btn-warning">
-        Toggle Counter
+        {t('CounterToolkit.toggleCounter')}
       </button>
     </main>
   );

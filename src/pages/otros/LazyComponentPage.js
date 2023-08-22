@@ -12,7 +12,7 @@ export default function LazyComponentPage () {
       </h1>
       <p className="alert alert-secondary" dangerouslySetInnerHTML={{__html: t('others.lazyComponent.infoBox')}} />
       <div className="bg-dark text-white text-center my-4 py-4" style={{ height: '200vh'}}>
-        <h1 className="text-center mt-5 pt-5">Haz scroll hasta llegar al componente para cargarlo!</h1>
+        <h1 className="text-center mt-5 pt-5">{t('others.lazyComponent.ScrollDownToLoad')}</h1>
       </div>
       <LazyComponentToLoad/>
     </>

@@ -18,15 +18,12 @@ export default function DynamicLinkDetailPage () {
   return (
     <>
       <h1 className="bg-dark text-white text-center my-4 py-4">
-        Image Detail
+        {t('libraries.routerDom.dynamicRoutesDetail.title')}
       </h1>
-      <p className="alert alert-secondary">
-        Podemos ver como le hemos pasado la propiedad por contexto y no hemos vuelto a hacer una llamada para la carga de la imagen.<br/><br/>
-        Hemos utilizado tambien el <strong>useParams</strong> de react-router-dom, para que mediante el parametro dinamico de la URL mostremos la imagen que nos interesa del listado que habiamos cargado previamente.
-      </p>
+      <p className="alert alert-secondary" dangerouslySetInnerHTML={{__html: t('libraries.routerDom.dynamicRoutesDetail.infoBox')}} />
       <SearchImages/>
-      {galeriaURL.length && <Link to={galeriaURL}>Volver a la página anterior</Link>}
-      <h2 className="mb-4">Detalle de imagen</h2>
+      {galeriaURL.length && <Link to={galeriaURL}>{t('libraries.routerDom.dynamicRoutesDetail.returnPage')}</Link>}
+      <h2 className="mb-4">{t('libraries.routerDom.dynamicRoutesDetail.imageDetail')}</h2>
       {
         image?
           <Image
@@ -36,7 +33,7 @@ export default function DynamicLinkDetailPage () {
             url={image.url}
           />
         :
-          <h2 className="my-5">Imagen no encontrada, por favor busque un id de imagen existente.</h2>
+          <h2 className="my-5">{t('libraries.routerDom.dynamicRoutesDetail.imageNoFound')}</h2>
       }
     </>
   )

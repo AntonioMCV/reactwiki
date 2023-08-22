@@ -41,7 +41,14 @@
     "routerDom": {
       "dynamicRoutes": {
         "title": "Dynamic Routes",
-        "infoBox": "We are taking advantage of this example to add a search engine and navigate through the button to the image indicated in the form, in turn <strong>dynamic URLs </strong> are also added in the <strong>App.js< /strong><br><br>As can be seen in the code, the dynamic part will be indicated by a colon plus the name that we want to put in the dynamic part."
+        "infoBox": "We are taking advantage of this example to add a search engine and navigate through the button to the image indicated in the form, in turn <strong>dynamic URLs </strong> are also added in the <strong>App.js</strong><br><br>As can be seen in the code, the dynamic part will be indicated by a colon plus the name that we want to put in the dynamic part."
+      },
+      "dynamicRoutesDetail": {
+        "title": "Image Detail",
+        "infoBox": "We can see how we have passed the property by context and we have not made a call to load the image again.<br/><br/>We have also used the <strong>useParams</strong> of react-router-dom, so that through the dynamic parameter of the URL we show the image that interests us from the list that we had previously loaded.",
+        "returnPage": "Return previus page",
+        "imageDetail": "Image detail",
+        "imageNoFound": "Image not found, please look for an existing image id."
       },
       "simpleRoutes": {
         "title": "Simple Links",
@@ -65,7 +72,8 @@
     },
     "lazyComponent": {
       "title": "Lazy Component",
-      "infoBox": "If we open the browser console we can verify that the message of the component '<b>loading the lazy component</b>' will not appear, until the scroll arrives to show it, this is thanks to the class < b>IntersectionObserver</b>.<br><br>We are observing the box that surrounds the component using a React reference thanks to its <b>useRef()</b> method.<br><br>For performance We must always disconnect from the observation with the <b>disconnect() </b> method when we no longer have to use it.<br><br>On the other hand, we can also see how the object properties are updated in the console with a lot of information that we can use according to our needs."
+      "infoBox": "If we open the browser console we can verify that the message of the component '<b>loading the lazy component</b>' will not appear, until the scroll arrives to show it, this is thanks to the class <b>IntersectionObserver</b>.<br><br>We are observing the box that surrounds the component using a React reference thanks to its <b>useRef()</b> method.<br><br>For performance We must always disconnect from the observation with the <b>disconnect() </b> method when we no longer have to use it.<br><br>On the other hand, we can also see how the object properties are updated in the console with a lot of information that we can use according to our needs.",
+      "ScrollDownToLoad": "Scroll down to the component to load it!"
     }
   }
 }

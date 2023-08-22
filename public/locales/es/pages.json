@@ -43,6 +43,13 @@
         "title": "Rutas Dinámicas",
         "infoBox": "Estamos aprovechando este ejemplo para añadir un buscador y navegar atraves del boton a la imagen indicada en el fomulario, a su vez tambien se añaden <strong>URLs dinámicas</strong> en el <strong>App.js</strong><br><br>Como se puede apreciar en el código la parte dinamica será indicada por dos puntos mas el nombre que queramos ponerle en la parte dinámica."
       },
+      "dynamicRoutesDetail": {
+        "title": "Detalle imagen",
+        "infoBox": "Podemos ver como le hemos pasado la propiedad por contexto y no hemos vuelto a hacer una llamada para la carga de la imagen.<br/><br/>Hemos utilizado tambien el <strong>useParams</strong> de react-router-dom, para que mediante el parametro dinamico de la URL mostremos la imagen que nos interesa del listado que habiamos cargado previamente.",
+        "returnPage": "Volver a la página anterior",
+        "imageDetail": "Detalle de la imagen",
+        "imageNoFound": "Imagen no encontrada, por favor busque un id de imagen existente."
+      },
       "simpleRoutes": {
         "title": "Enlaces Simples",
         "infoBox": "Usamos el paquete npm <strong>react-router-dom</strong> para poder utilizar las ventajas del single page application.<br><br> Se deberán importar los componentes necesarios <strong>Link, Routes y Route</strong>, siendo <strong>Routes</strong> el area donde se irán renderizando los componentes según su URL",
@@ -65,7 +72,8 @@
     },
     "lazyComponent": {
       "title": "Lazy Component",
-      "infoBox": "Si abrimos la consola del navegador podremos comprobar que no nos aparecerá el mensage del componente '<b>carga del lazy component</b>', hasta que llegue el scroll a mostralo, esto es gracias a la clase <b>IntersectionObserver</b>.<br><br>Estamos observando la caja que envuelve al componente usando una referecia de React gracias a su metodo <b>useRef()</b>.<br><br>Por rendimiento siempre nos deberemos desconectar de la observación con el metodo <b>disconnect()</b> cuando ya no tengamos que usarla.<br><br>Por otro lado tambien en la consola podemos ver como se va actualizando las propiedades del objeto con un monton de información que podremos utilizar segun a nuestras necesidades."
+      "infoBox": "Si abrimos la consola del navegador podremos comprobar que no nos aparecerá el mensage del componente '<b>carga del lazy component</b>', hasta que llegue el scroll a mostralo, esto es gracias a la clase <b>IntersectionObserver</b>.<br><br>Estamos observando la caja que envuelve al componente usando una referecia de React gracias a su metodo <b>useRef()</b>.<br><br>Por rendimiento siempre nos deberemos desconectar de la observación con el metodo <b>disconnect()</b> cuando ya no tengamos que usarla.<br><br>Por otro lado tambien en la consola podemos ver como se va actualizando las propiedades del objeto con un monton de información que podremos utilizar segun a nuestras necesidades.",
+      "ScrollDownToLoad": "Haz scroll hasta llegar al componente para cargarlo!"
     }
   }
 }
