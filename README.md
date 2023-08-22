@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The node version to develop is 18.16.0
 
-To see this project in production mode you can visit [https://reactwiki.vercel.app](https://reactwiki.vercel.app)
-To see this project code and preview you can visit the [https://codesandbox.io/s/github/AntonioMCV/reactwiki](codesandbox) version.
+To see this project in production mode you can visit [https://reactwiki.vercel.app](https://reactwiki.vercel.app).\
+To see this project code and preview you can visit the [https://codesandbox.io/s/github/AntonioMCV/reactwiki](codeSandbox) version.
 
 ## Available Scripts
 

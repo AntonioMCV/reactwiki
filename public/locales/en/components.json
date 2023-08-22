@@ -25,5 +25,19 @@
     "writeToRender": "Write to re-render the component",
     "changeNameOf": "Change the name of the",
     "arrayExplicationProp": "In addition to this component we are passing the array numbers from the parent through the exampleArray prop"
+  },
+  "CounterToolkit": {
+    "title": "ReduxToolkit Like Counter",
+    "like": "Like",
+    "likePlus": "I love it",
+    "unlike": "unlike",
+    "toggleCounter": "Toggle Counter"
+  },
+  "SearchImages": {
+    "writeId": "Write the image id to access",
+    "send": "Send"
+  },
+  "ListOfImages": {
+    "title": "Image Gallery"
   }
 }
